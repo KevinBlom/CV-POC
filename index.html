@@ -1,0 +1,55 @@
+<head>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Vidaloka&display=swap" rel="stylesheet">
+
+
+  <script type="text/javascript" src="js/jquery/jquery-1.7.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery/jquery-ui-1.8.17.custom.min.js"></script>
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+  <script type="text/javascript" src="js/jspdf.umd.js"></script>
+
+  <script>
+    window.jsPDF = window.jspdf.jsPDF;
+  </script>
+</head>
+<body>
+
+  <div id="cv" class="cv-page">
+    <div class="profile-column">
+      <div class="profile-image">
+        <img src="clover.jpeg" class="profile-image-mask"alt="">
+      </div>
+      <div class="profile-name">
+        <h1>Anne Heijkoop</h1>
+      </div>
+      <div class="profile-title">
+        <h2>Totally spy</h2>
+      </div>
+    </div>
+    <div class="experience-column">
+
+    </div>
+    <div class="education-column">
+
+    </div>
+  </div>
+  <!-- <div id="content" style="background-color: red">
+    Hallo J-hizzle!
+  </div>
+  <img src="img.jpg" alt=""></img> -->
+  <button onclick="savePDF()" type="button" name="Save">Save</button>
+
+</body>
+<script type="text/javascript">
+
+  function savePDF() {
+    var doc = new jsPDF('l', 'pt', 'a4') ;
+    doc.html(document.getElementById("cv"), {
+      callback: function (doc) {
+        doc.save('CV.pdf');
+      }
+    });
+  }
+</script>

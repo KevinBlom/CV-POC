@@ -1,0 +1,67 @@
+.cv-page {
+  width: 842px;
+  height: 595px;
+  display: flex;
+  font-family: 'Vidaloka', Helvetica, sans-serif;
+}
+
+.profile-column {
+  background-color: #FF6370;
+  width: 227px;
+  height: 595px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+}
+
+.experience-column {
+  background-color: #ffffff;
+  width: 322px;
+  height: 595px;
+
+}
+
+.education-column {
+  background-color: rgba(0, 0, 0, .4);
+  width: 293px;
+  height: 595px;
+
+}
+
+.profile-image {
+  padding-top: 51px;
+  padding-bottom: 24px;
+}
+
+.profile-image-mask {
+  width: 105px;
+  height: 105px;
+  padding: 6px;
+  border-radius: 50%;
+
+  border-width: 2px 2px 2px 2px;
+  border-style: dashed;
+  border-color: rgba(255, 255, 255, .6);
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+  object-position: center right;
+}
+
+h1 {
+  font-family: 'Vidaloka', serif;
+  font-weight: 100;
+  font-size: 20pt;
+  color: white;
+  margin: 0;
+}
+
+h2 {
+  font-family: Helvetica, sans-serif;
+  font-size: 12px;
+  color: white;
+  margin: 0;
+}
